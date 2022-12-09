@@ -11,6 +11,52 @@ public class App {
     Coche miCoche = new Coche();
     miCoche.incrementarPuertas();
     System.out.println(miCoche.numeroPuertas);
+
+    int numberIf = 3;
+    int numberWhile = 0;
+    if (numberIf < 0) {
+      System.out.println("Negativo");
+    } else if (numberIf > 0) {
+      System.out.println("Positivo");
+    } else {
+      System.out.println("Cero");
+    }
+
+    while (numberWhile < 3) {
+      System.out.println(numberWhile);
+      numberWhile++;
+    }
+
+    numberWhile = 0;
+
+    do {
+      System.out.println(numberWhile);
+      numberWhile++;
+    } while (numberWhile < 3);
+
+    for (int numberFor = 0; numberFor <= 3; numberFor++) {
+      System.out.println(numberFor);
+    }
+
+    String season = "invierno";
+
+    switch (season) {
+      case "primavera":
+        System.out.println("Primavera");
+        break;
+      case "invierno":
+        System.out.println("Invierno");
+        break;
+      case "otoño":
+        System.out.println("Otoño");
+        break;
+      case "Verano":
+        System.out.println("Verano");
+        break;
+      default:
+        System.out.println("No es una estación");
+        break;
+    }
   }
 
   public static int add(int n1, int n2, int n3) {
